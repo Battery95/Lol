@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Lato:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(
+    0deg,
+    rgb(225, 212, 248) 23.8%,
+    rgb(156, 113, 190) 45%,
+    rgb(110, 86, 199) 70%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(34, 3, 63, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+.img-container::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #2e032e;
+  left: -50px;
+  opacity: 0;
+  right: -50px;
+  top: -100px;
+  bottom: -50px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+}
+.img-container::after,
+.img-container::before {
+  z-index: 10;
+  content: "";
+  position: absolute;
+  border: 2px solid #2e032e;
+  left: -50px;
+  opacity: 0;
+  right: -50px;
+  top: -100px;
+  bottom: -50px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+}
+.img-container::after {
+  animation-delay: 1.25s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.img-container > img {
+  width: inherit;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  animation-delay: 1.25s;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.action-btn {
+  background-color: #fff;
+  border: 0;
+  color: #f3cdf3;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+.action-btn-big {
+  color: #cdc2d0;
+  font-size: 30px;
+}
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: rgba(148, 76, 189, 0.308);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in opacity 0.3s ease-in;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #f7b8f7;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}

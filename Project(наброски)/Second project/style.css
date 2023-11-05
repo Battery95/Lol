@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  height: 35px;
+  background: #fe036a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block p {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 9px 11px 8px 9px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.item-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.item {
+  height: 255px;
+  width: 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.grape-image {
+  width: 168px;
+  height: 168px;
+  background: #ebe8e8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.grape-image img {
+  width: 109px;
+}
+.count {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  position: absolute;
+  line-height: 38px;
+
+  color: #ffffff;
+}
+.discoun {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #ffffff;
+
+  position: absolute;
+
+  top: 6px;
+  right: 12px;
+  padding: 0px 6px;
+
+  background: #fe036a;
+  border-radius: 4px;
+}
+.item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 3px;
+}
+.turckey {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+
+  letter-spacing: -0.24px;
+
+  color: #404040;
+}
+.weight {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+
+  letter-spacing: -0.08px;
+
+  color: #9a9a9a;
+}
+.choice {
+  width: 76px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: #fe036a;
+  border-radius: 10px;
+}
+
+.dollar {
+  width: 22px;
+  height: 17px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+  letter-spacing: -0.24px;
+
+  color: #ffffff;
+}
+
+.oll-cursor {
+  cursor: pointer;
+}

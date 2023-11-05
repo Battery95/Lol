@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #F1EDEE;
+}
+.header-block {
+  height: 32px;
+  background: #8AA29E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-block > p {
+  font-family: "Inter";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  padding: 9px 11px 8px 9px;
+}
+.block-items {
+  margin-top: 12px;
+  display: flex;
+  gap: 19px;
+  justify-content: center;
+}
+.block {
+  width: 100px;
+  height: 83px;
+  background: #686963;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-black {
+  width: 34px;
+  height: 34px;
+  background: red;
+  cursor: pointer;
+}
+.main {
+  background: #DB5461;
+  width: 456px;
+  margin: 0 auto;
+  margin-top: 19px;
+  padding: 7px 9px 13px 9px;
+  display: flex;
+  gap: 9px;
+}
+.main-image {
+  background: url(./cat.jpg);
+  background-size: cover;
+  background-position: 0px 280px;
+  min-width: 219px;
+  height: 163px;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+}
+.main-text h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.main-second-text {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+}

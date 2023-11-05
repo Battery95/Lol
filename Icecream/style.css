@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap");
+@font-face {
+  font-family: "Fredoka One";
+  src: url(/fonts/FredokaOne-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Fredoka One", "Hind Madurai";
+}
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo > img {
+  padding-left: 180px;
+}
+
+/*HEADER-NAV*/
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 200px;
+
+  cursor: pointer;
+}
+
+/*HEADER-NAV-RIGHT*/
+
+.header-nav-right {
+  display: flex;
+  align-items: center;
+  padding-left: 172px;
+}
+#header_button {
+  padding: 14px 50px 13px 50px;
+  color: #fff;
+  background: #d23166;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*HEADER_MAIN*/
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 184px;
+  height: 862px;
+
+  background-color: #f2ceda5b;
+
+  background-image: url(/img/header-ice-cream.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.header-main-article {
+  width: 665px;
+}
+.header-main-article > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+
+  color: #0f0101;
+  padding-bottom: 6px;
+}
+.header-main-article b {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+
+  color: #d23166;
+
+  opacity: 0.9;
+}
+
+.header-main-article > h1 {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+
+  color: #0f0101;
+
+  opacity: 0.9;
+  padding-bottom: 35px;
+}
+.header-main-article > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #0f0101;
+
+  opacity: 0.6;
+}
